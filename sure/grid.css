@@ -1,0 +1,64 @@
+.container{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-row-gap:10px;
+    grid-column-gap: 5px;
+    height: 100vh;
+grid-template-areas: 
+"content1 content2 content2"
+"content1 content3 content3"
+"content5 content5 content6"
+}
+#content1{
+    background-color: crimson;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: content1;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+}
+#content > div{
+    background-color: #fff;
+    width: 20px;
+#nested1 {
+grid-column: 1/4;
+  }
+#content2{
+    background-color: rgb(190, 220, 20);
+    border-radius: 5px; 
+    text-align: center;
+    grid-area: content2;
+}
+#content3{
+    background-color: rgba(220, 20, 153, 0.521);
+    border-radius: 5px;
+    text-align: center;
+    grid-area: content3;
+}
+#content4{
+    background-color: rgb(207, 153, 83);
+    border-radius: 5px;
+    text-align: center;
+    grid-area: content4;
+}
+#content5{
+    background-color: plum;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: content5;
+}
+#content6{
+    background-color:sienna;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: content6;
+    
+}
